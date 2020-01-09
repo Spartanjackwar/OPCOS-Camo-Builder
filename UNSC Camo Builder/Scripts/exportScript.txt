@@ -1,0 +1,166 @@
+//OPCOS full-build Script, by Spartanjackwar
+
+//======================================================================================================
+//Script Syntax Documentation, for your ease.
+//======================================================================================================
+//Mode number;Modname;ClassName;Display Name;TemplateFileName;Subfolder of \@Modname\Modname_units\;
+//Uniforms: 	1;Mod;Class;Display;
+//Vests M52A: 	2;Mod;Class;Display;
+//Vests M52D: 	3;Mod;Class;Display;
+//3den Units: 	4;Mod;Class;Display;Template;Subfolder;
+//No existance:	5;
+//.ini change: 	6;Section;Child;NewValue;
+//Script exec: 	7;Script;
+//Reset folder: 8;Mod;
+
+//Note that 5 and 7 are not currently supported as script modes.  5 also doesn't exist yet.
+
+//Important notice!  Make sure every command ends with a semicolon!
+//Failure to end commands in semicolons will introduce newline characters into parameters, which is bad.
+
+//======================================================================================================
+//Setup for Build
+//======================================================================================================
+//Empty anything already existing and build folders where necessary.
+8;OPCOS;
+
+//Initializing the correct templates, just in case user changed config.ini.
+6;Template_File_Names;M52A;M52A_Vests_xxx;
+6;Template_File_Names;M52D;M52D_Vests_xxx;
+6;Template_File_Names;CBU_Uniforms;Uniforms_xxx;
+6;Template_File_Names;CBU_Soldiers;Soldiers_xxx;
+6;Template_File_Names;3den_subcat;UNSC_3densubcat_xxx;
+
+//======================================================================================================
+//Cross Branch Uniforms
+//======================================================================================================
+//Unsorted
+1;OPCOS;Strider;Strider;
+
+//Memes
+1;OPCOS;Banana;Banana? Bloody hell...;
+1;OPCOS;Headpat;Headpat;
+1;OPCOS;Pantycam;Pantycam;
+1;OPCOS;Rattlepat;Rattlepat;
+1;OPCOS;ahegaopat;Ahegaopat;
+
+//Woodland
+1;OPCOS;ATACS_TDX;ATACS_TDX;
+1;OPCOS;ERDLH;ERDL-Highland;
+1;OPCOS;ERDLL;ERDL-Lowland;
+1;OPCOS;MARPATw;MARPAT Woodland;
+1;OPCOS;MitchellPattern;Mitchell Pattern;
+1;OPCOS;TigerStripe;TigerStripe;
+1;OPCOS;Flecktarn;Flecktarn;
+1;OPCOS;CTRG_WDL;CTRG Tropic;
+
+//Desert
+1;OPCOS;AOR1;AOR1;
+1;OPCOS;ChocolateChip;ChocolateChip;
+1;OPCOS;DCU;DCU;
+1;OPCOS;DDPM;DDPM;
+1;OPCOS;CTRG_DES;CTRG Arid;
+
+//Multipurpose
+1;OPCOS;UCP;UCP;
+1;OPCOS;Erbsenmuster;Erbsenmuster;
+1;OPCOS;H2ODST;Halo 2 ODST;
+1;OPCOS;CTRG_URB;CTRG Urban;
+1;OPCOS;Multicam;Multicam;
+1;OPCOS;Red_Digital;Red Digital;
+
+//======================================================================================================
+//M52A Body Armor
+//======================================================================================================
+//Unsorted
+2;OPCOS;Templar;Templar;
+2;OPCOS;Red;Red;
+2;OPCOS;Blue;Blue;
+2;OPCOS;Police;Police;
+2;OPCOS;DoCS;DoCS;
+
+//Memes
+2;OPCOS;Banana;Banana? Bloody hell...;
+2;OPCOS;Headpat;Headpat;
+2;OPCOS;Pantycam;Pantycam;
+2;OPCOS;Rattlepat;Rattlepat;
+
+//Woodland
+2;OPCOS;ATACS_TDX;ATACS_TDX;
+2;OPCOS;ERDLH;ERDL-Highland;
+2;OPCOS;ERDLL;ERDL-Lowland;
+2;OPCOS;MitchellPattern;Mitchell Pattern;
+2;OPCOS;TigerStripe;TigerStripe;
+2;OPCOS;Flecktarn;Flecktarn;
+2;OPCOS;CTRG_WDL;CTRG Tropic;
+
+//Desert
+2;OPCOS;AOR1;AOR1;
+2;OPCOS;ChocolateChip;ChocolateChip;
+2;OPCOS;DCU;DCU;
+2;OPCOS;DDPM;DDPM;
+2;OPCOS;CTRG_DES;CTRG Arid;
+
+//Multipurpose
+2;OPCOS;UCP;UCP;
+2;OPCOS;Erbsenmuster;Erbsenmuster;
+2;OPCOS;H2ODST;Halo 2 ODST;
+2;OPCOS;CTRG_URB;CTRG Urban;
+2;OPCOS;Multicam;Multicam;
+2;OPCOS;Red_Digital;Red Digital;
+
+//======================================================================================================
+//M52D Body Armor
+//======================================================================================================
+//Memes
+3;OPCOS;Rattlepat;Rattlepat;
+
+//Woodland
+3;OPCOS;ERDLL;ERDL-Lowland;
+3;OPCOS;ERDLH;ERDL-Highland;
+3;OPCOS;CTRG_WDL;CTRG Tropic;
+
+//Desert
+3;OPCOS;ChocolateChip;Chocolate Chip;
+3;OPCOS;DCU;DCU;
+3;OPCOS;CTRG_DES;CTRG Arid;
+
+//Multipurpose
+3;OPCOS;UCP;UCP;
+3;OPCOS;CTRG_URB;CTRG Urban;
+3;OPCOS;multicam;Multicam;
+
+//======================================================================================================
+//UNSC Army Units
+//======================================================================================================
+//Memes
+4;OPCOS;Banana;Banana? Bloody hell...;UNSC_Men_Army_xxx_Crew;Army;
+4;OPCOS;Headpat;Headpat;UNSC_Men_Army_CBU_WDL_xxx;Army;
+4;OPCOS;Pantycam;Pantycam;UNSC_Men_Army_CBU_WDL_xxx;Army;
+4;OPCOS;Rattlepat;Rattlepat;UNSC_Men_Army_xxx;Army;
+4;OPCOS;ahegaopat;Ahegaopat;UNSC_Men_Army_CBU_SNO_xxx;Army;
+
+//Woodland
+4;OPCOS;ATACS_TDX;ATACS_TDX;UNSC_Men_Army_CBU_WDL_xxx;Army;
+4;OPCOS;ERDLH;ERDL-Highland;UNSC_Men_Army_xxx;Army;
+4;OPCOS;ERDLL;ERDL-Lowland;UNSC_Men_Army_xxx;Army;
+4;OPCOS;MARPATw;MARPAT Woodland;UNSC_Men_Army_CBU_WDL_xxx;Army;
+4;OPCOS;MitchellPattern;Mitchell Pattern;UNSC_Men_Army_CBU_WDL_xxx;Army;
+4;OPCOS;TigerStripe;TigerStripe;UNSC_Men_Army_CBU_WDL_xxx;Army;
+4;OPCOS;Flecktarn;Flecktarn;UNSC_Men_Army_CBU_WDL_xxx;Army;
+4;OPCOS;CTRG_WDL;CTRG Tropic;UNSC_Men_Army_xxx;Army;
+
+//Desert
+4;OPCOS;AOR1;AOR1;UNSC_Men_Army_CBU_DES_xxx;Army;
+4;OPCOS;ChocolateChip;ChocolateChip;UNSC_Men_Army_xxx;Army;
+4;OPCOS;DCU;DCU;UNSC_Men_Army_xxx;Army;
+4;OPCOS;DDPM;DDPM;UNSC_Men_Army_CBU_DES_xxx;Army;
+4;OPCOS;CTRG_DES;CTRG Arid;UNSC_Men_Army_xxx;Army;
+
+//Multipurpose
+4;OPCOS;UCP;UCP;UNSC_Men_Army_xxx;Army;
+4;OPCOS;Erbsenmuster;Erbsenmuster;UNSC_Men_Army_CBU_URB_xxx;Army;
+4;OPCOS;H2ODST;Halo 2 ODST;UNSC_Men_Army_CBU_URB_xxx;Army;
+4;OPCOS;CTRG_URB;CTRG Urban;UNSC_Men_Army_xxx;Army;
+4;OPCOS;Multicam;Multicam;UNSC_Men_Army_xxx;Army;
+4;OPCOS;Red_Digital;Red Digital;UNSC_Men_Army_xxx;Army;
